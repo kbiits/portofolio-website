@@ -75,7 +75,7 @@ const GitProfile = ({ config }) => {
           sanitizedConfig.github.username
         }+fork:${!sanitizedConfig.github.exclude.forks}${excludeRepo}`;
 
-        let url = `https://api.github.com/search/repositories?q=${query}&sort=${sanitizedConfig.github.sortBy}&per_page=${sanitizedConfig.github.limit}&type=Repositories`;
+        let url = `https://api.github.com/search/repositories?q=${query}&sort=${sanitizedConfig.github.sortBy}&type=Repositories`;
 
         axios
           .get(url, {
@@ -85,8 +85,13 @@ const GitProfile = ({ config }) => {
           })
           .then((response) => {
             let data = response.data;
-
-            setRepo(data.items);
+            data.items.sort(
+              (x, y) =>
+                y.stargazers_count - x.stargazers_count ||
+                y.forks_count - x.forks_count ||
+                y.watchers_count - x.watchers_count
+            );
+            setRepo(data.items.slice(0, sanitizedConfig.github.limit));
           })
           .catch((error) => {
             handleError(error);
