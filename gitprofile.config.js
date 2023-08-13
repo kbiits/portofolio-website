@@ -12,7 +12,7 @@ const config = {
   },
   social: {
     linkedin: 'nabiel',
-    twitter: '',
+    twitter: '@kbiits',
     facebook: '',
     dribbble: '',
     behance: '',
@@ -37,27 +37,45 @@ const config = {
       from: 'Dec 2021',
       to: 'Mar 2022',
     },
+    {
+      company: 'TurnkeyID',
+      position: 'Backend Engineer Intern',
+      from: 'Jun 2022',
+      to: 'Aug 2022',
+    },
+    {
+      company: 'Tokopedia',
+      position: 'Software Engineer Intern',
+      from: 'Aug 2022',
+      to: 'Jan 2023',
+    },
+    {
+      company: 'Danamas',
+      position: 'Software Engineer',
+      from: 'Oct 2022',
+      to: 'Oct 2023',
+    },
   ],
   education: [
     {
       institution: 'Sriwijaya University',
       degree: 'Computer Science',
       from: '2020',
-      to: 'present',
+      to: 'end of 2023',
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
     source: 'medium', // medium | dev
     username: 'kbiits',
-    limit: 5, // How many posts to display. Max is 10.
+    limit: 10, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
     // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-    id: '', // Please remove this and use your own tag id or keep it empty
+    id: 'G-RFQ1MFP47G', // Please remove this and use your own tag id or keep it empty
   },
   hotjar: {
-    id: '', //  Please remove this and use your own id or keep it empty
+    id: '3611682', //  Please remove this and use your own id or keep it empty
     snippetVersion: 6,
   },
   themeConfig: {
