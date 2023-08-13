@@ -62,7 +62,7 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
           try {
             if (googleAnalytics?.id) {
               ga.event({
-                action: 'Click project',
+                action: 'project_click',
                 params: {
                   project: item.name,
                 },

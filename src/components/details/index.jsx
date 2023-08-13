@@ -13,7 +13,7 @@ import {
   FaGlobe,
 } from 'react-icons/fa';
 import PropTypes from 'prop-types';
-import { skeleton } from '../../helpers/utils';
+import { ga, skeleton } from '../../helpers/utils';
 
 const ListItem = ({ icon, title, value, link, skeleton = false }) => {
   return (
@@ -22,6 +22,14 @@ const ListItem = ({ icon, title, value, link, skeleton = false }) => {
       target="_blank"
       rel="noreferrer"
       className="flex justify-start py-2 px-1 items-center"
+      onClick={() => {
+        ga.event({
+          action: 'social_click',
+          params: {
+            link,
+          },
+        });
+      }}
     >
       <span className="w-2 m-2">{icon}</span>
       <div className="flex-grow font-medium px-2">{title}</div>
