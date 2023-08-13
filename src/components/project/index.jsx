@@ -148,6 +148,14 @@ const Project = ({ repo, loading, github, googleAnalytics }) => {
                       target="_blank"
                       rel="noreferrer"
                       className="opacity-50"
+                      onClick={() => {
+                        if (googleAnalytics?.id) {
+                          ga.event({
+                            action: 'project_see_all_click',
+                            params: {},
+                          });
+                        }
+                      }}
                     >
                       See All
                     </a>
