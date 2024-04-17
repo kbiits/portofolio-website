@@ -12,7 +12,7 @@ const config = {
   },
   social: {
     linkedin: 'nabiel',
-    twitter: '@kbiits',
+    twitter: '',
     facebook: '',
     dribbble: '',
     behance: '',
