@@ -32,16 +32,16 @@ const config = {
   ],
   experiences: [
     {
-      company: 'Waresix',
-      position: 'Frontend Engineer Intern',
-      from: 'Dec 2021',
-      to: 'Mar 2022',
+      company: 'Flik',
+      position: 'Software Engineer',
+      from: 'Oct 2023',
+      to: 'Now',
     },
     {
-      company: 'TurnkeyID',
-      position: 'Backend Engineer Intern',
-      from: 'Jun 2022',
-      to: 'Aug 2022',
+      company: 'Danamas',
+      position: 'Software Engineer',
+      from: 'Oct 2022',
+      to: 'Oct 2023',
     },
     {
       company: 'Tokopedia',
@@ -50,10 +50,16 @@ const config = {
       to: 'Jan 2023',
     },
     {
-      company: 'Danamas',
-      position: 'Software Engineer',
-      from: 'Oct 2022',
-      to: 'Oct 2023',
+      company: 'TurnkeyID',
+      position: 'Backend Engineer Intern',
+      from: 'Jun 2022',
+      to: 'Aug 2022',
+    },
+    {
+      company: 'Waresix',
+      position: 'Frontend Engineer Intern',
+      from: 'Dec 2021',
+      to: 'Mar 2022',
     },
   ],
   education: [
@@ -61,7 +67,7 @@ const config = {
       institution: 'Sriwijaya University',
       degree: 'Computer Science',
       from: '2020',
-      to: 'end of 2023',
+      to: '2024',
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)
