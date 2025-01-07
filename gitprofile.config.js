@@ -67,7 +67,7 @@ const config = {
       institution: 'Sriwijaya University',
       degree: 'Computer Science',
       from: '2020',
-      to: '2024',
+      to: '2025',
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)
